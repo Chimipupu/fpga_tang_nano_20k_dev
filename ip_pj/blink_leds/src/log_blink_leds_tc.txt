@@ -1,0 +1,30 @@
+PS C:\dev_work\git\my\fpga_tang_nano_20k_dev\ip_pj\blink_leds\src> iverilog blink_leds.v blink_leds_tb.v
+PS C:\dev_work\git\my\fpga_tang_nano_20k_dev\ip_pj\blink_leds\src> vvp a.out
+VCD info: dumpfile led_blink.vcd opened for output.
+=== LED点滅シミュレーション開始 ===
+CLOCK_XTAL =        1000
+LED_NUM =           6
+シミュレーション用LEDトグル周期: 18518 ns (0.019 ms)
+実際の27MHzでは: 500ms間隔
+シミュレーションでは       27000倍高速
+---
+[0] LED状態変化:      [*]     [*]     [*]     [*]     [*]     [*]
+Time: 100000 ns, LED状態: 111111 (0x3f)
+[18538000] 1秒フラグ発生 - LEDトグル ->      [*]     [*]     [*]     [*]     [*]     [*]
+[18575000] LED状態変化:       []      []      []      []      []      []
+Time: 18575000 ns, LED状態: 000000 (0x00)
+[37094000] 1秒フラグ発生 - LEDトグル ->       []      []      []      []      []      []
+[37131000] LED状態変化:      [*]     [*]     [*]     [*]     [*]     [*]
+Time: 37131000 ns, LED状態: 111111 (0x3f)
+[55650000] 1秒フラグ発生 - LEDトグル ->      [*]     [*]     [*]     [*]     [*]     [*]
+[55687000] LED状態変化:       []      []      []      []      []      []
+Time: 55687000 ns, LED状態: 000000 (0x00)
+[74206000] 1秒フラグ発生 - LEDトグル ->       []      []      []      []      []      []
+[74243000] LED状態変化:      [*]     [*]     [*]     [*]     [*]     [*]
+Time: 74243000 ns, LED状態: 111111 (0x3f)
+[92762000] 1秒フラグ発生 - LEDトグル ->      [*]     [*]     [*]     [*]     [*]     [*]
+[92799000] LED状態変化:       []      []      []      []      []      []
+Time: 92799000 ns, LED状態: 000000 (0x00)
+=== シミュレーション完了 ===
+blink_leds_tb.v:68: $finish called at 111206595 (1ps)
+PS C:\dev_work\git\my\fpga_tang_nano_20k_dev\ip_pj\blink_leds\src> 
