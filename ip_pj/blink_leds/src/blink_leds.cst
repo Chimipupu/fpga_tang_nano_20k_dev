@@ -2,34 +2,30 @@
 // Ver: 0.1 (2025/7/5)
 // Copyright (c) 2025 Chimipupu(https://github.com/Chimipupu) All Rights Reserved.
 
-// [GOWIN EDAのV1.9.11.03で1.8Vにするとエラー]
-// IO_LOC "leds[5]" 20;
-// IO_PORT "leds[5]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
-// IO_LOC "leds[4]" 19;
-// IO_PORT "leds[4]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
-// IO_LOC "leds[3]" 18;
-// IO_PORT "leds[3]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
-// IO_LOC "leds[2]" 17;
-// IO_PORT "leds[2]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
-// IO_LOC "leds[1]" 16;
-// IO_PORT "leds[1]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
-// IO_LOC "leds[0]" 15;
-// IO_PORT "leds[0]" PULL_MODE=UP DRIVE=8 BANK_VCCIO=1.8;
-// IO_LOC "clk" 4;
-// IO_PORT "clk" PULL_MODE=UP BANK_VCCIO=1.8;
-
-// [GOWIN EDAのV1.9.11.03では3.3Vにする]
+// LED5ピン ... BANK6のピン20(IOL51B)
 IO_LOC "leds[5]" 20;
 IO_PORT "leds[5]" PULL_MODE=UP DRIVE=8 IO_TYPE=LVCMOS33;
+
+// LED4ピン ... BANK6のピン19(IOL51A)
 IO_LOC "leds[4]" 19;
 IO_PORT "leds[4]" PULL_MODE=UP DRIVE=8 IO_TYPE=LVCMOS33;
+
+// LED3ピン ... BANK6のピン18(IOL49B)
 IO_LOC "leds[3]" 18;
 IO_PORT "leds[3]" PULL_MODE=UP DRIVE=8 IO_TYPE=LVCMOS33;
+
+// LED2ピン ... BANK6のピン17(IOL49A)
 IO_LOC "leds[2]" 17;
 IO_PORT "leds[2]" PULL_MODE=UP DRIVE=8 IO_TYPE=LVCMOS33;
+
+// LED1ピン ... BANK6のピン16(IOL47B)
 IO_LOC "leds[1]" 16;
 IO_PORT "leds[1]" PULL_MODE=UP DRIVE=8 IO_TYPE=LVCMOS33;
+
+// LED0ピン ... BANK6のピン15(IOL47A)
 IO_LOC "leds[0]" 15;
 IO_PORT "leds[0]" PULL_MODE=UP DRIVE=8 IO_TYPE=LVCMOS33;
+
+// BANK7のピン4(IOL7A)
 IO_LOC "clk" 4;
 IO_PORT "clk" PULL_MODE=UP IO_TYPE=LVCMOS33;
