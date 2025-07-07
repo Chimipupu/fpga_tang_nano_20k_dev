@@ -13,9 +13,9 @@ module top #(
     );
 
     // [レジスタ]
-    reg reg_cnt_1s_flg;             // 1秒カウントフラグレジスタ
-    reg [23:0] reg_1s_cnt = 'd0;    // 1秒カウントフラグレジスタ
-    reg [5:0] reg_led_val = 'd0;    // LEDデータレジスタ
+    reg reg_cnt_1s_flg;             // 1bit 1秒カウントフラグレジスタ
+    reg [31:0] reg_1s_cnt = 'd0;    // 32bit 1秒カウントフラグレジスタ
+    reg [5:0] reg_led_val = 'd0;    // 6bit LEDデータレジスタ
 
     always @(posedge clk ) begin
         if( reg_1s_cnt < CLOCK_XTAL / 2 ) begin
