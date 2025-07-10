@@ -1,5 +1,6 @@
 // IP: LED点滅回路
-// Ver: 0.1 (2025/7/5)
+// Lang: System Verilog
+// Ver: 0.1 (2025/7/10)
 // Copyright (c) 2025 Chimipupu(https://github.com/Chimipupu) All Rights Reserved.
 
 module top #(

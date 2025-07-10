@@ -1,5 +1,6 @@
 // LED点滅回路 テストベンチ
-// Ver: 0.1 (2025/7/5)
+// Lang: System Verilog
+// Ver: 0.1 (2025/7/10)
 // Copyright (c) 2025 Chimipupu(https://github.com/Chimipupu) All Rights Reserved.
 
 `timescale 1ns / 1ps
