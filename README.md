@@ -45,4 +45,3 @@ Icarus Verilog + GTKWaveでのシミュレーション
     - RGB LED:WS2812(NeoPixel互換) x1
     - スイッチ:x2
     - SD/TFスロット:x1
-
