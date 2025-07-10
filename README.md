@@ -1,14 +1,32 @@
-# FPGA Tagn Nano 20K Develop
+# fpga_tn20k_dev
 
 FPGA基板のTang Nano 20KでIPを個人開発
 
 ## 開発環境
 
+### S/W
+
 - EDA
   - [Gowin EDA V1.9.11.03 (Windows x64)](https://cdn.gowinsemi.com.cn/Gowin_V1.9.11.03_x64_win.zip)🔗
-- シミュレーション
-  - [Icarus Verilog](https://bleyer.org/icarus/)🔗
+- シミュレータ
+  - Verilog HDL
+    - [Icarus Verilog](https://bleyer.org/icarus/)🔗
+  - System Verilog
+    - [Verilator](https://www.veripool.org/verilator/)🔗
+- シミュレーション波形形確認ツール
   - [GTKWave](https://gtkwave.sourceforge.net/)🔗
+
+『Verilog HDL』
+Icarus Verilog + GTKWaveでのシミュレーション
+
+```shell
+> iverilog uart.v uart_tb.v
+> vvp a.out
+> gtkwave uart_tb.vcd
+```
+
+### H/W
+
 - 基板
   - [Tang Primer 20K](https://wiki.sipeed.com/hardware/en/tang/tang-primer-20k/primer-20k.html)🔗
   - FPGA
@@ -20,7 +38,7 @@ FPGA基板のTang Nano 20KでIPを個人開発
       - SDRAM(32bit): 64Mbit
       - PLL:x2
       - I/O Bank:x8
-  - その他
+  - その他(基板実装部品)
     - フラッシュ:64Mbit
     - オンボード(JTAG & UART to USB):BL616
     - LED:オレンジ x6
@@ -28,8 +46,3 @@ FPGA基板のTang Nano 20KでIPを個人開発
     - スイッチ:x2
     - SD/TFスロット:x1
 
-```shell
-> iverilog uart.v uart_tb.v
-> vvp a.out
-> gtkwave uart_tb.vcd
-```
