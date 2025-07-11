@@ -4,6 +4,8 @@ FPGA基板のTang Nano 20KでIPを個人開発
 
 ## 開発環境
 
+![litex](/doc//img/LiteX/LiteX_tn20k_20250711.png)
+
 ### S/W
 
 - EDA
@@ -28,7 +30,7 @@ Icarus Verilog + GTKWaveでのシミュレーション
 ### H/W
 
 - 基板
-  - [Tang Primer 20K](https://wiki.sipeed.com/hardware/en/tang/tang-primer-20k/primer-20k.html)🔗
+  - [Tang Nano 20K](https://wiki.sipeed.com/hardware/en/tang/tang-nano-20k/nano-20k.html)🔗
   - FPGA
     - [GW2AR-LV18QN88C8/I7](https://www.gowinsemi.com.cn/prod_view.aspx?TypeId=10&FId=t3:10:3&Id=167#GW2AR)
       - LUT:20736
